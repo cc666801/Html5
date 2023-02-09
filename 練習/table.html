@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .tb1 {
+            border: 3px solid #0072E3;
+            width: 50%;
+            height: 50%;
+            border-collapse: collapse;
+        }
+
+        body {
+            background-color: azure;
+            width: 100%;
+            height: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        thead {
+           background-color: #005AB5;
+           color: #ffffff;
+           text-transform: capitalize;     
+        }
+
+        tbody {
+            background-color: #46A3FF;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: #97CBFF;
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-attachment: #66B3FF;
+        }
+
+        tbody td:hover {
+            background-color: aquamarine;
+            color: rebeccapurple;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="tb1">
+        <caption>
+            <h2>表格練習</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>column1</th>
+                <th>column2</th>
+                <th>column3</th>
+                <th>column4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">1</td>
+                <!-- <td>2</td> -->
+                <td colspan="2">3</td>
+                <!-- <td>4</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td colspan="4">1</td>
+                <!-- <td>2</td> -->
+                <!-- <td>3</td> -->
+                <!-- <td>4</td> -->
+            </tr>
+        </tbody>
+
+
+    </table>
+</body>
+</html>

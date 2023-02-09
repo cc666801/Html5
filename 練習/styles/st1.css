@@ -1,0 +1,42 @@
+.st1 {
+    color: orange;
+    font-style: italic;
+}
+
+/* 只有h2會套用st2 */
+h2.st2 {
+    color: pink;
+    text-transform: capitalize;
+}
+
+.col1 {
+    color: purple;
+}
+
+.col2 {
+    color: brown;
+}
+
+.size1 {
+    font-size: 3em;
+}
+
+.trans1 {
+    text-transform: uppercase;
+}
+
+.sty1 {
+    font-style: italic;
+}
+
+#col2h3 {
+    color: #009393;
+}
+
+.col3 {
+    color: blue;
+}
+
+#theH1 {
+    color: green;
+}
